@@ -1,0 +1,94 @@
+.character__details{
+    margin-bottom: 140px;
+    &--arrow{
+        margin-top: 23px;
+        margin-left: 26px;
+        span{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            margin-left: 8px;
+        }
+    }
+    &--profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .details--profile__img{
+            width: 300px;
+            height: 300px;
+            margin: 16px 0px;
+            img{
+                width: 100%;
+                height: 100%;
+                border: 5px solid #F2F2F7;
+                border-radius: 150px;
+            }
+        }
+        .details--profile__name{
+            font-size: 48px;
+            line-height: 56px;
+            color: #081F32;
+            margin-bottom: 48px;
+        }
+        .details--profile__info{
+            max-width: 413px;
+            width: 100%;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            color: #8E8E93;
+            text-align: center;
+            .profile__info--list{                
+                margin-top: 48px;
+                padding-left: 15px;
+                list-style: none;
+                text-align: left;
+                li{
+                    padding: 9px 0px 12px 0px;
+                    border-bottom: 1px solid rgba(33, 33, 33, 0.08);;
+                    h4{
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.15px;
+                        color: #081F32;
+                    }
+                    span{
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.25px;
+                        color: #6E798C;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 600px) {
+        margin-bottom: 85px;
+        &--arrow{
+            margin-top: 23px;
+        }
+
+        .details--profile__img{
+            margin: 77px 0px 34px;
+        }
+
+        .details--profile__name{
+            margin-bottom: 34px;
+            text-align: center;
+            font-size: 32px;
+            line-height: 38px;
+        }
+        .details--profile__info{
+            text-align: left;
+            .profile__info--list{
+                margin-top: 16px;
+                li{
+                    padding-left: 0px;
+                }
+            } 
+        }
+    }
+}
